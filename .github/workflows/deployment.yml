@@ -11,3 +11,4 @@ jobs:
     environment: Test
     steps:
       - name: deploy
+      - run: echo "Hello World" > file.txt
