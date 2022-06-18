@@ -10,5 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: Test
     steps:
-      - name: deploy
-      - run: echo "Hello World" > file.txt
+      - run: echo "Nice work, $First_Name. Deploying to production server on branch $GITHUB_REF"
+        env:
+          First_Name: Mona
+      - run: echo First Workflow
